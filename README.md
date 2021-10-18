@@ -8,7 +8,7 @@ Usage
 module "s3bucket" {
     source = "git::https://github.com/kofisis/tf-module-task"
     
-    name: "name of user to create"
+    name= "name of user to create"
     bucket-name= "name of the bucket to create"
   
 }
