@@ -9,3 +9,9 @@ variable "region" {
     description = "To specify the region for the infrastructure"
   
 }
+
+variable "bucket-name" {
+    default = "ergo-task-1"
+    description = 
+  
+}
