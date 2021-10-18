@@ -6,7 +6,7 @@ get & put objects in the S3 bucket created
 Usage 
 
 module "s3bucket" {
-    source = "https://github.com/kofisis/tf-module-task"
+    source = "git::https://github.com/kofisis/tf-module-task"
   
 }
 ~~~
