@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "bucket" {
 
 #creating IAM user for user provided in variable file
 resource "aws_iam_user" "users3" {
-    name = var.user
+    name = var.user.0
   
 }
 
