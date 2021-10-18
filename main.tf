@@ -53,3 +53,16 @@ resource "aws_iam_policy_attachment" "s3_bucket_policy_attachment" {
     policy_arn = aws_iam_policy.s3_bucket_policy.arn
   
 }
+
+
+variable "user" {
+    type = list
+    default = ["s3_user"]
+    description = "to create an IAM user for the user specified above"
+}
+
+variable "bucket-name" {
+    default = "ergo-task-1"
+    description = "Name of the s3 bucket"
+  
+}
