@@ -1,7 +1,7 @@
 # tf-module-tasks
 
-This module creates an s3 bucket and assigns and grants a created s3 user the ability to
-get & put objects
+This module creates an s3 bucket and an IAM user who is assigned the permission to
+get & put objects in the S3 bucket created
 ~~~ 
 Usage 
 
