@@ -1,12 +1,11 @@
 variable "user" {
-    type = list
-    default = ["s3_user"]
+    type = string
     description = "to create an IAM user for the user specified above"
 }
  
 
 variable "bucket-name" {
-    default = "ergo-task-1"
+    type = string
     description = "To specify name of bucket"
   
 }
