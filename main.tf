@@ -37,7 +37,7 @@ resource "aws_iam_policy" "s3_bucket_policy" {
         "s3:PutObject"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::bucketmenana"
+      "Resource": "arn:aws:s3:::ergo-task-1"
     }
   ]
 
