@@ -12,6 +12,6 @@ variable "region" {
 
 variable "bucket-name" {
     default = "ergo-task-1"
-    description = 
+    description = "To specify name of bucket"
   
 }
