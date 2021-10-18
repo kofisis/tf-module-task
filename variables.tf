@@ -1,6 +1,6 @@
 variable "user" {
-    type = string
-    default = "sample-user"
+    type = list
+    default = ["sample-user"]
     description = "to create an IAM user for the user specified above"
 }
  
