@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket = var.bucket-name
+  bucket = ${var.bucket-name}
   acl    = "private"
 
   tags = {
-    Name = var.bucket-name
+    Name = ${var.bucket-name}
   }
 
   server_side_encryption_configuration {
