@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "bucket" {
-  bucket = "ergo-task-1"
+  bucket = var.bucket-name
   acl    = "private"
 
   tags = {
-    Name = "ergo-task-bucket"
+    Name = var.bucket-name
   }
 
   server_side_encryption_configuration {
@@ -37,7 +37,7 @@ resource "aws_iam_policy" "s3_bucket_policy" {
         "s3:PutObject"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::ergo-task-1"
+      "Resource": "arn:aws:s3:::${var.bucket-name}"
     }
   ]
 
